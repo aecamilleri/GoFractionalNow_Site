@@ -1,6 +1,3 @@
-[submodule "JDlugozima"]
-	path = JDlugozima
-	url = https://github.com/aecamilleri/JDlugozima.git
 [submodule "Template_01"]
 	path = Template_01
 	url = https://github.com/aecamilleri/Template_01.git
