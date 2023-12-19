@@ -2035,6 +2035,8 @@ p {
 /*=============================
   End Service CSS
 ===============================*/
+.fancybox-bg {
+  background: #ffffff !important;}
 
 /*=============================
 	09. Start Pricing Table CSS
