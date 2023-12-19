@@ -2,6 +2,72 @@
 Template Name: Bizfinity
 Author: GrayGrids
 */
+/*===========================
+    TABLE css 
+===========================*/
+
+.responsive-table {
+  li {
+    border-radius: 3px;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    line-height: 1.3em;
+  }
+  .table-header {
+    background-color: #3e54ff;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    background: #3e54ff;
+    color: #fff;
+  }
+  .table-row {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+  }
+  .col-1 {
+    flex-basis: 40%;
+  }
+  .col-2 {
+    flex-basis: 25%;
+  }
+  .col-3 {
+    flex-basis: 25%;
+  }
+  .col-4 {
+    flex-basis: 10%;
+  }
+  
+  @media all and (max-width: 767px) {
+    .table-header {
+      display: none;
+    }
+    .table-row{
+      
+    }
+    li {
+      display: block;
+    }
+    .col {
+      
+      flex-basis: 100%;
+      
+    }
+    .col {
+      display: flex;
+      padding: 10px 0;
+      &:before {
+        color: #6C7A89;
+        padding-right: 10px;
+        content: attr(data-label);
+        flex-basis: 50%;
+        text-align: right;
+      }
+    }
+  }
+}
 
 /*===========================
     01.COMMON css 
@@ -1698,6 +1764,98 @@ p {
   animation: play-btn-2 1.5s linear infinite;
 }
 
+/*********/
+.feature-test-video {
+  position: relative;
+  background-image: url('../images/Template-01.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.feature-test-video .watch-inner {
+  display: inline-block;
+  text-align: center;
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -40px;
+  top: 50%;
+  margin-top: -80px;
+}
+
+.feature-test-video .video-head {
+  display: inline-block;
+  border-radius: 100%;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  margin-top: 35px;
+}
+
+.feature-test-video .video-head .video {
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  background: #fff;
+  color: #333;
+  border-radius: 100%;
+  display: inline-block;
+  font-size: 28px;
+  padding-left: 5px;
+}
+
+.feature-test-video .video-head .video:hover {
+  background: #3E54FF;
+  color: #fff;
+}
+
+.feature-test-video .video-head .video {
+  height: 80px;
+  width: 80px;
+  background: #fff;
+  color: #3E54FF;
+  text-align: center;
+  line-height: 84px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 5;
+}
+
+.feature-test-video .video-head .video:before {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-animation: play-btn-1 1.8s linear infinite;
+  -moz-animation: play-btn-1 1.8s linear infinite;
+  -o-animation: play-btn-1 1.8s linear infinite;
+  animation: play-btn-1 1.8s linear infinite;
+}
+
+.feature-test-video .video-head .video:after {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-animation: play-btn-2 1.5s linear infinite;
+  -moz-animation: play-btn-2 1.5s linear infinite;
+  -o-animation: play-btn-2 1.5s linear infinite;
+  animation: play-btn-2 1.5s linear infinite;
+}
+
 /*=============================
 	End Features CSS
 ===============================*/
@@ -1911,6 +2069,17 @@ p {
 }
 
 /* Table Head */
+.stretch { 
+  -webkit-align-items: stretch; 
+  align-items: stretch; 
+} 
+
+.single-table b{
+  background-color: #3E54FF;
+  padding: 5px;
+  color: #fff;
+}
+
 .pricing-table .single-table .table-head {}
 
 .pricing-table .single-table .title {
@@ -1964,11 +2133,19 @@ p {
   bottom: -6px;
 }
 
+.table-list li .hosting {
+  color: #3E54FF;
+  font-size: 16px;
+  font-weight: 400;
+  font-weight: bold;
+}
+
 /* Table List */
 .pricing-table .table-list li {
   color: #444;
-  margin-bottom: 5px;
-  font-size: 14px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: initial;
 }
 
 .pricing-table .table-list li:last-child {
@@ -2447,6 +2624,7 @@ p {
 .free-version-banner .button .btn {
   background-color: #fff;
   color: #3e54ff;
+  width: 200px;
 }
 
 .free-version-banner .button .btn:hover {

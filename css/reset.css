@@ -447,6 +447,18 @@ big {
     background: #4353ff;
     content: "";
 }
+
+.section-title p:after {
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+    top: -15px;
+    height: 2px;
+    width: 50px;
+    background: #4353ff;
+    content: "";
+}
+
 .section-title p {
 	font-size: 14px;
 	color: #666;
