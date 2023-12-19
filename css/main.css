@@ -2206,6 +2206,7 @@ p {
   margin-bottom: 20px;
   color: #fff;
   font-weight: 700;
+  line-height: normal;
 }
 
 .newsletter .subscribe-text p {
