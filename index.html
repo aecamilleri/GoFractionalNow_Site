@@ -19,10 +19,11 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <!-- FancyBox CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
     <!-- FancyBox JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-    
+
     <!-- ========================= CSS here ========================= -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/LineIcons.2.0.css" />
@@ -256,8 +257,8 @@
                     <div class="feature-test-video wow fadeInUp shadow rounded" data-wow-delay=".3s">
                         <div class="watch-inner">
                             <div class="video-head wow zoomIn" data-wow-delay="0.4s">
-                                <a href="http://localhost/wordpress/wp-content/uploads/2023/12/Template-01_.mp4" class="glightbox video"><i
-                                        class="lni lni-play"></i></a>
+                                <a href="http://localhost/wordpress/wp-content/uploads/2023/12/Template-01_.mp4"
+                                    class="glightbox video"><i class="lni lni-play"></i></a>
                             </div>
                         </div>
                     </div>
@@ -298,33 +299,94 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-12">
+                <div class="col-lg-6 col-md-6 col-12" id="option1">
                     <div class="single-service wow fadeInUp" data-wow-delay=".2s">
                         <div class="serial">
                             <span><i class="lni lni-checkmark"></i></span>
                         </div>
                         <h3><a href="service-single.html">Option 1</a></h3>
                         <ul><b>Upload resume and schedule a call with a marketer.</b>
-                            <li>During call, select a domain name and populate a template built specifically for fractional consulting.
-                                <br>Site is launched and hosted for a year</li>
+                            <li>During call, select a domain name and populate a template built specifically for
+                                fractional consulting.
+                                <br>Site is launched and hosted for a year
+                            </li>
                         </ul>
                     </div>
+                    <!-- Hidden content for Option 1 -->
+                    <div id="hidden-content-option1" style="display: none;">
+                        <!-- Tu contenido aquí -->
+                        <div class="col-12 single-table wow fadeInUp mx-3 p-4 bg-white rounded shadow">
+                            <div class="d-flex flex-column">
+                                <h4 class="title text-center">Upload resume and<br>
+                                    schedule a call with a marketer</h4>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <form method="post" action="#" id="#">
+                                                <div class="form-group files mb-3 text-center">
+                                                    <label>Upload Your File </label>
+                                                    <input type="file" class="form-control mt-3" multiple="">
+                                                </div>
+                                                <!-- Email input -->
+                                                <h4 class="title text-center my-3">Complete your information</h4>
+                                                <!-- Email input -->
+                                                <div data-mdb-input-init class="form-outline mb-1">
+                                                    <input type="email" id="form1Example1" class="form-control" />
+                                                    <label class="form-label" for="form1Example1">Email address</label>
+                                                </div>
+                                                <!-- Password input -->
+                                                <div data-mdb-input-init class="form-outline mb-4">
+                                                    <input type="password" id="form1Example2" class="form-control" />
+                                                    <label class="form-label" for="form1Example2">Password</label>
+                                                </div>
+                                                <!-- Submit button -->
+                                                <button data-mdb-ripple-init type="submit"
+                                                    class="btn btn-primary btn-block w-100">Book a Meeting</button>
+
+
+                                            </form>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Table Bottom -->
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-12">
+                <div class="col-lg-6 col-md-6 col-12" id="option2">
                     <div class="single-service wow fadeInUp" data-wow-delay=".3s">
                         <div class="serial">
                             <span><i class="lni lni-checkmark"></i></span>
                         </div>
                         <h3><a href="service-single.html">Option 2</a></h3>
                         <ul><b>Customize the Fractional Consultant template yourself.​</b>
-                            <li>Select a domain name and populate a template built specifically for fractional consulting. ​
-                                <br>Site is launched and hosted for a year</li>
+                            <li>Select a domain name and populate a template built specifically for fractional
+                                consulting. ​
+                                <br>Site is launched and hosted for a year
+                            </li>
                         </ul>
+                    </div>
+                    <!-- Hidden content for Option 2 -->
+                    <div id="hidden-content-option2" style="display: none;">
+                        <!-- Tu contenido aquí -->
+                        <div class="col-12 single-table wow fadeInUp mx-3 px-0 pt-4 bg-white rounded shadow">
+                            <div class="d-flex flex-column">
+                                <h4 class="title text-center">Option 1 <span>for Freelancers</span></h4>
+                                <img class="mt-3" src="images/Template_V01.jpg" alt="">
+                                <!-- Button -->
+                                <div class="button m-auto w-100">
+                                    <a class="btn white-bg mouse-dir w-100 text-center" href="#">Get Started <span
+                                            class="dir-part"></span></a>
+                                </div>
+                            </div>
+                            <!-- Table Bottom -->
+                        </div>
                     </div>
                 </div>
                 <div class="section-title mt-4">
                     <p class="wow fadeInUp" data-wow-delay=".6s">There are many variations of passages of Lorem
-                    Ipsum available, but the majority have suffered alteration in some form.</p>
+                        Ipsum available, but the majority have suffered alteration in some form.</p>
                 </div>
             </div>
         </div>
@@ -349,7 +411,8 @@
                     <div class="feature-content">
                         <div class="title">
                             <span class="wow fadeInRight" data-wow-delay=".3s">Our Service</span>
-                            <h3 class="wow fadeInRight" data-wow-delay=".5s">Built for CMO, CTO, CFO,<br>and other Executives</h3>
+                            <h3 class="wow fadeInRight" data-wow-delay=".5s">Built for CMO, CTO, CFO,<br>and other
+                                Executives</h3>
                         </div>
                         <div class="feature-item wow fadeInUp" data-wow-delay=".5s">
                             <div class="feature-thumb">
@@ -366,7 +429,8 @@
                             </div>
                             <div class="banner-content">
                                 <h2 class="title">Get marketing help​</h2>
-                                <p>Initial set-up includes an hour of help graphic design or marketing help thereafter, starting at $50 an hour.</p>
+                                <p>Initial set-up includes an hour of help graphic design or marketing help thereafter,
+                                    starting at $50 an hour.</p>
                             </div>
                         </div>
                         <div class="feature-item wow fadeInUp" data-wow-delay=".7s">
@@ -393,11 +457,14 @@
                 <div class="col-xl-6">
                     <div class="section-title mb-60">
                         <span class="text-white wow fadeInDown" data-wow-delay=".2s"
-                            style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInDown;">GoFractionalNow Templates</span>
+                            style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInDown;">GoFractionalNow
+                            Templates</span>
                         <h2 class="text-white wow fadeInUp" data-wow-delay=".4s"
-                            style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">Do you want to try<br>any of our templates?</h2>
+                            style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">Do you want to
+                            try<br>any of our templates?</h2>
                         <p class="text-white wow fadeInUp" data-wow-delay=".6s"
-                            style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">Select your profile and choose one of our templates to fill out your information</p>
+                            style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">Select your
+                            profile and choose one of our templates to fill out your information</p>
                     </div>
                 </div>
                 <div class="col-xl-3">
@@ -405,45 +472,51 @@
                         <a href="#" rel="nofollow" class="btn mouse-dir-freelancer btn-lg">Freelancer
                             <span class="dir-part"></span>
                         </a>
-                            <div id="hidden-content-freelancer" style="display: none;" class="col-8 bg-transparent">
-                                <div class="row d-flex justify-content-center align-items-stretch">
-                                    <div class="col-lg-3 col-md-3 col-12 single-table wow fadeInUp mx-3 px-0 pt-4 bg-white rounded shadow">
-                                        <div class="d-flex flex-column h-100">
-                                            <h4 class="title text-center">Option 1 <span>for Freelancers</span></h4>
-                                            <img class="mt-3" src="images/Template_V01.jpg" alt="">
-                                            <!-- Button -->
-                                            <div class="button m-auto w-100">
-                                                <a class="btn white-bg mouse-dir w-100 text-center" href="#">Get Started <span class="dir-part"></span></a>
-                                            </div>
+                        <div id="hidden-content-freelancer" style="display: none;" class="col-8 bg-transparent">
+                            <div class="row d-flex justify-content-center align-items-stretch">
+                                <div
+                                    class="col-lg-3 col-md-3 col-12 single-table wow fadeInUp mx-3 px-0 pt-4 bg-white rounded shadow">
+                                    <div class="d-flex flex-column h-100">
+                                        <h4 class="title text-center">Option 1 <span>for Freelancers</span></h4>
+                                        <img class="mt-3" src="images/Template_V01.jpg" alt="">
+                                        <!-- Button -->
+                                        <div class="button m-auto w-100">
+                                            <a class="btn white-bg mouse-dir w-100 text-center" href="#">Get Started
+                                                <span class="dir-part"></span></a>
                                         </div>
-                                        <!-- Table Bottom -->
                                     </div>
-                            
-                                    <div class="col-lg-3 col-md-3 col-12 single-table wow fadeInUp mx-3 px-0 pt-4 bg-white rounded shadow">
-                                        <div class="d-flex flex-column h-100">
-                                            <h4 class="title text-center">Option 2 <span>for Freelancers</span></h4>
-                                            <img class="mt-3" src="images/Template_V02.jpg" alt="">
-                                            <!-- Button -->
-                                            <div class="button m-auto w-100">
-                                                <a class="btn white-bg mouse-dir w-100 text-center" href="#">Get Started <span class="dir-part"></span></a>
-                                            </div>
+                                    <!-- Table Bottom -->
+                                </div>
+
+                                <div
+                                    class="col-lg-3 col-md-3 col-12 single-table wow fadeInUp mx-3 px-0 pt-4 bg-white rounded shadow">
+                                    <div class="d-flex flex-column h-100">
+                                        <h4 class="title text-center">Option 2 <span>for Freelancers</span></h4>
+                                        <img class="mt-3" src="images/Template_V02.jpg" alt="">
+                                        <!-- Button -->
+                                        <div class="button m-auto w-100">
+                                            <a class="btn white-bg mouse-dir w-100 text-center" href="#">Get Started
+                                                <span class="dir-part"></span></a>
                                         </div>
-                                        <!-- Table Bottom -->
                                     </div>
-                            
-                                    <div class="col-lg-3 col-md-3 col-12 single-table wow fadeInUp mx-3 px-0 pt-4 bg-white rounded shadow">
-                                        <div class="d-flex flex-column h-100">
-                                            <h4 class="title text-center">Option 3 <span>for Freelancers</span></h4>
-                                            <img class="mt-3" src="images/Template_V03.jpg" alt="">
-                                            <!-- Button -->
-                                            <div class="button m-auto w-100">
-                                                <a class="btn white-bg mouse-dir w-100 text-center" href="#">Get Started <span class="dir-part"></span></a>
-                                            </div>
+                                    <!-- Table Bottom -->
+                                </div>
+
+                                <div
+                                    class="col-lg-3 col-md-3 col-12 single-table wow fadeInUp mx-3 px-0 pt-4 bg-white rounded shadow">
+                                    <div class="d-flex flex-column h-100">
+                                        <h4 class="title text-center">Option 3 <span>for Freelancers</span></h4>
+                                        <img class="mt-3" src="images/Template_V03.jpg" alt="">
+                                        <!-- Button -->
+                                        <div class="button m-auto w-100">
+                                            <a class="btn white-bg mouse-dir w-100 text-center" href="#">Get Started
+                                                <span class="dir-part"></span></a>
                                         </div>
-                                        <!-- Table Bottom -->
                                     </div>
+                                    <!-- Table Bottom -->
                                 </div>
                             </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-xl-3">
@@ -451,45 +524,51 @@
                         <a href="#" rel="nofollow" class="btn mouse-dir-clevel btn-lg">C-Level
                             <span class="dir-part"></span>
                         </a>
-                            <div id="hidden-content-clevel" style="display: none;" class="col-8 bg-transparent">
-                                <div class="row d-flex justify-content-center align-items-stretch">
-                                    <div class="col-lg-3 col-md-3 col-12 single-table wow fadeInUp mx-3 px-0 pt-4 bg-white rounded shadow">
-                                        <div class="d-flex flex-column h-100">
-                                            <h4 class="title text-center">Option 1 <span>for C-Levels</span></h4>
-                                            <img class="mt-3" src="images/Template_V04.jpg" alt="">
-                                            <!-- Button -->
-                                            <div class="button m-auto w-100">
-                                                <a class="btn white-bg mouse-dir w-100 text-center" href="#">Get Started <span class="dir-part"></span></a>
-                                            </div>
+                        <div id="hidden-content-clevel" style="display: none;" class="col-8 bg-transparent">
+                            <div class="row d-flex justify-content-center align-items-stretch">
+                                <div
+                                    class="col-lg-3 col-md-3 col-12 single-table wow fadeInUp mx-3 px-0 pt-4 bg-white rounded shadow">
+                                    <div class="d-flex flex-column h-100">
+                                        <h4 class="title text-center">Option 1 <span>for C-Levels</span></h4>
+                                        <img class="mt-3" src="images/Template_V04.jpg" alt="">
+                                        <!-- Button -->
+                                        <div class="button m-auto w-100">
+                                            <a class="btn white-bg mouse-dir w-100 text-center" href="#">Get Started
+                                                <span class="dir-part"></span></a>
                                         </div>
-                                        <!-- Table Bottom -->
                                     </div>
-                            
-                                    <div class="col-lg-3 col-md-3 col-12 single-table wow fadeInUp mx-3 px-0 pt-4 bg-white rounded shadow">
-                                        <div class="d-flex flex-column h-100">
-                                            <h4 class="title text-center">Option 2 <span>for C-Levels</span></h4>
-                                            <img class="mt-3" src="images/Template_V05.jpg" alt="">
-                                            <!-- Button -->
-                                            <div class="button m-auto w-100">
-                                                <a class="btn white-bg mouse-dir w-100 text-center" href="#">Get Started <span class="dir-part"></span></a>
-                                            </div>
+                                    <!-- Table Bottom -->
+                                </div>
+
+                                <div
+                                    class="col-lg-3 col-md-3 col-12 single-table wow fadeInUp mx-3 px-0 pt-4 bg-white rounded shadow">
+                                    <div class="d-flex flex-column h-100">
+                                        <h4 class="title text-center">Option 2 <span>for C-Levels</span></h4>
+                                        <img class="mt-3" src="images/Template_V05.jpg" alt="">
+                                        <!-- Button -->
+                                        <div class="button m-auto w-100">
+                                            <a class="btn white-bg mouse-dir w-100 text-center" href="#">Get Started
+                                                <span class="dir-part"></span></a>
                                         </div>
-                                        <!-- Table Bottom -->
                                     </div>
-                            
-                                    <div class="col-lg-3 col-md-3 col-12 single-table wow fadeInUp mx-3 px-0 pt-4 bg-white rounded shadow">
-                                        <div class="d-flex flex-column h-100">
-                                            <h4 class="title text-center">Option 3 <span>for C-Levels</span></h4>
-                                            <img class="mt-3" src="images/Template_V06.jpg" alt="">
-                                            <!-- Button -->
-                                            <div class="button m-auto w-100">
-                                                <a class="btn white-bg mouse-dir w-100 text-center" href="#">Get Started <span class="dir-part"></span></a>
-                                            </div>
+                                    <!-- Table Bottom -->
+                                </div>
+
+                                <div
+                                    class="col-lg-3 col-md-3 col-12 single-table wow fadeInUp mx-3 px-0 pt-4 bg-white rounded shadow">
+                                    <div class="d-flex flex-column h-100">
+                                        <h4 class="title text-center">Option 3 <span>for C-Levels</span></h4>
+                                        <img class="mt-3" src="images/Template_V06.jpg" alt="">
+                                        <!-- Button -->
+                                        <div class="button m-auto w-100">
+                                            <a class="btn white-bg mouse-dir w-100 text-center" href="#">Get Started
+                                                <span class="dir-part"></span></a>
                                         </div>
-                                        <!-- Table Bottom -->
                                     </div>
+                                    <!-- Table Bottom -->
                                 </div>
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -857,7 +936,7 @@
                     }
                 }
             });
-    
+
             $('.btn.mouse-dir-clevel').fancybox({
                 src: '#hidden-content-clevel',
                 type: 'inline',
@@ -869,9 +948,33 @@
             });
         });
     </script>
-    
-    
-    
+    <script>
+        $(document).ready(function () {
+            // Configuración de FancyBox
+            $().fancybox({
+                selector: '[data-fancybox]',
+                animationEffect: "zoom-in-out",
+                transitionEffect: "circular",
+                hash: false,
+                backFocus: false
+            });
+
+            // Al hacer clic en el primer bloque
+            $('#option1').click(function () {
+                $.fancybox.open($('#hidden-content-option1'));
+            });
+
+            // Al hacer clic en el segundo bloque
+            $('#option2').click(function () {
+                $.fancybox.open($('#hidden-content-option2'));
+            });
+        });
+    </script>
+
+
+
+
+
 </body>
 
 </html>
