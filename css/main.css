@@ -2045,6 +2045,11 @@ p {
   background: #fff;
   position: relative;
 }
+#hidden-content .single-table:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
 
 .pricing-table .single-table {
   background: #fff;

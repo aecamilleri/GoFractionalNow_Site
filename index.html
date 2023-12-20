@@ -402,9 +402,10 @@
                 </div>
                 <div class="col-xl-3">
                     <div class="contact-btn text-right text-lg-right button wow fadeInRight" data-wow-delay=".8s">
-                        <a href="#" rel="nofollow" class="btn mouse-dir btn-lg">Freelancer
-                            <span class="dir-part"></span></a>
-                            <div id="hidden-content" style="display: none;" class="col-8 bg-transparent">
+                        <a href="#" rel="nofollow" class="btn mouse-dir-freelancer btn-lg">Freelancer
+                            <span class="dir-part"></span>
+                        </a>
+                            <div id="hidden-content-freelancer" style="display: none;" class="col-8 bg-transparent">
                                 <div class="row d-flex justify-content-center align-items-stretch">
                                     <div class="col-lg-3 col-md-3 col-12 single-table wow fadeInUp mx-3 px-0 pt-4 bg-white rounded shadow">
                                         <div class="d-flex flex-column h-100">
@@ -420,7 +421,7 @@
                             
                                     <div class="col-lg-3 col-md-3 col-12 single-table wow fadeInUp mx-3 px-0 pt-4 bg-white rounded shadow">
                                         <div class="d-flex flex-column h-100">
-                                            <h4 class="title text-center">Option 1 <span>for Freelancers</span></h4>
+                                            <h4 class="title text-center">Option 2 <span>for Freelancers</span></h4>
                                             <img class="mt-3" src="images/Template_V02.jpg" alt="">
                                             <!-- Button -->
                                             <div class="button m-auto w-100">
@@ -432,7 +433,7 @@
                             
                                     <div class="col-lg-3 col-md-3 col-12 single-table wow fadeInUp mx-3 px-0 pt-4 bg-white rounded shadow">
                                         <div class="d-flex flex-column h-100">
-                                            <h4 class="title text-center">Option 1 <span>for Freelancers</span></h4>
+                                            <h4 class="title text-center">Option 3 <span>for Freelancers</span></h4>
                                             <img class="mt-3" src="images/Template_V03.jpg" alt="">
                                             <!-- Button -->
                                             <div class="button m-auto w-100">
@@ -447,8 +448,48 @@
                 </div>
                 <div class="col-xl-3">
                     <div class="contact-btn text-right text-lg-right button wow fadeInRight" data-wow-delay=".8s">
-                        <a href="#" rel="nofollow" class="btn mouse-dir btn-lg">C-Level
-                            <span class="dir-part"></span></a>
+                        <a href="#" rel="nofollow" class="btn mouse-dir-clevel btn-lg">C-Level
+                            <span class="dir-part"></span>
+                        </a>
+                            <div id="hidden-content-clevel" style="display: none;" class="col-8 bg-transparent">
+                                <div class="row d-flex justify-content-center align-items-stretch">
+                                    <div class="col-lg-3 col-md-3 col-12 single-table wow fadeInUp mx-3 px-0 pt-4 bg-white rounded shadow">
+                                        <div class="d-flex flex-column h-100">
+                                            <h4 class="title text-center">Option 1 <span>for C-Levels</span></h4>
+                                            <img class="mt-3" src="images/Template_V04.jpg" alt="">
+                                            <!-- Button -->
+                                            <div class="button m-auto w-100">
+                                                <a class="btn white-bg mouse-dir w-100 text-center" href="#">Get Started <span class="dir-part"></span></a>
+                                            </div>
+                                        </div>
+                                        <!-- Table Bottom -->
+                                    </div>
+                            
+                                    <div class="col-lg-3 col-md-3 col-12 single-table wow fadeInUp mx-3 px-0 pt-4 bg-white rounded shadow">
+                                        <div class="d-flex flex-column h-100">
+                                            <h4 class="title text-center">Option 2 <span>for C-Levels</span></h4>
+                                            <img class="mt-3" src="images/Template_V05.jpg" alt="">
+                                            <!-- Button -->
+                                            <div class="button m-auto w-100">
+                                                <a class="btn white-bg mouse-dir w-100 text-center" href="#">Get Started <span class="dir-part"></span></a>
+                                            </div>
+                                        </div>
+                                        <!-- Table Bottom -->
+                                    </div>
+                            
+                                    <div class="col-lg-3 col-md-3 col-12 single-table wow fadeInUp mx-3 px-0 pt-4 bg-white rounded shadow">
+                                        <div class="d-flex flex-column h-100">
+                                            <h4 class="title text-center">Option 3 <span>for C-Levels</span></h4>
+                                            <img class="mt-3" src="images/Template_V06.jpg" alt="">
+                                            <!-- Button -->
+                                            <div class="button m-auto w-100">
+                                                <a class="btn white-bg mouse-dir w-100 text-center" href="#">Get Started <span class="dir-part"></span></a>
+                                            </div>
+                                        </div>
+                                        <!-- Table Bottom -->
+                                    </div>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -807,8 +848,18 @@
     </script>
     <script>
         $(document).ready(function () {
-            $('.btn.mouse-dir').fancybox({
-                src: '#hidden-content',
+            $('.btn.mouse-dir-freelancer').fancybox({
+                src: '#hidden-content-freelancer',
+                type: 'inline',
+                opts: {
+                    afterShow: function (instance, current) {
+                        console.info('done!');
+                    }
+                }
+            });
+    
+            $('.btn.mouse-dir-clevel').fancybox({
+                src: '#hidden-content-clevel',
                 type: 'inline',
                 opts: {
                     afterShow: function (instance, current) {
@@ -818,6 +869,8 @@
             });
         });
     </script>
+    
+    
     
 </body>
 
