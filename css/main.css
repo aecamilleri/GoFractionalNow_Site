@@ -2686,8 +2686,17 @@ p {
 
 .free-version-banner .button .btn:hover {
   color: #fff;
+  background-color: #3E54FF;
+  border: 2px solid #fff;
 }
 
 .free-version-banner .button .btn .dir-part {
   background-color: #333;
+}
+/* Agrega tus estilos de zoomout aquí */
+#banner {
+  transition: transform 0.5s ease-out;
+}
+#banner.zoomed-out {
+  transform: scale(0.8); /* Ajusta el valor según sea necesario */
 }
